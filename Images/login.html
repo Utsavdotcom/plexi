@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/SignUp</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" height="50px" src="Images/logo.png" alt="logo">
+        </a>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="login.html"><button>Sign up/Login</button></a>
+     </header>
+    <div class="container">
+        <!-- Tabs for Login and SignUp -->
+        <div class="tabs">
+            <button class="tab active" data-tab="login">Login</button>
+            <button class="tab" data-tab="signup">Sign Up</button>
+        </div>
+        
+        <!-- Forms Section -->
+        <div class="form-container">
+            <!-- Login Form -->
+            <form id="login" class="form active">
+                <h2>Welcome Back</h2>
+                <div class="input-group">
+                    <input type="email" id="login-email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="login-password" placeholder="Password" required>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember Me</label>
+                </div>
+                <button type="submit">Login</button>
+                <div class="social-login">
+                    <button class="google">Login with Google</button>
+                    <button class="facebook">Login with Facebook</button>
+                </div>
+            </form>
+
+            <!-- Sign Up Form -->
+            <form id="signup" class="form">
+                <h2>Create Account</h2>
+                <div class="input-group">
+                    <input type="text" id="first-name" placeholder="First Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="last-name" placeholder="Last Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="signup-email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="phone-number" placeholder="Phone Number" pattern=""[0-9]{10} required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="signup-password" placeholder="Password" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I accept the terms and conditions</label>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="loginjs.js"></script>
+</body>
+</html>
