@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plexi - Your go-to platform for help</title>
     <link rel="icon" type="image/jpg" href="Images/logo.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
@@ -15,175 +15,188 @@
 </head>
 <body>
     <!-- Navigation Section -->
-     <header>
-        <img class="logo" height=50px src="Images/logo.png" alt="logo">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <a class="cta" href="#"><button>Signup/Login</button></a>
-     </header>
+    <header>
+      <a href="index.html">
+          <img class="logo" height="50px" src="Images/logo.png" alt="Company Logo">
+      </a>
+      <nav>
+          <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+  
+              <!-- Dropdown Menu -->
+              <li class="has-dropdown">
+                  <a href="#">Services</a>
+                  <ul class="dropdown">
 
-     <!--Menu Icons-->
-     <div class="menu-icon">
-        <span class="icon icon-bars"></span>
-     </div>
+                      <li class="dropdown-item">
+                          <a href="#">Home Maintenance</a>
+                          <ul class="submenu">
+                              <li><a href="#">Lawn Mowing</a></li>
+                              <li><a href="#">Roof Repair</a></li>
+                              <li><a href="#">Plumbing Repairs</a></li>
+                              <li><a href="#">Electrical Work</a></li>
+                              <li><a href="#">Gutter Cleaning</a></li>
+                              <li><a href="#">Window Cleaning</a></li>
+                              <li><a href="#">Pressure Washing</a></li>
+                          </ul>
+                      </li>
 
-     <!-- Home Section -->
-     <section id="home" class="hero">
-        <div class="wrapper">
-            <div class="loading">
-                <h1 id="loading-message"></h1>
-            </div>
-            
-          <div class="hero-container">
-            <span>
-              <h1>Find help for everyday tasks.</h1>
-            </span>
-            <span>
-              <h3>Connecting people who needs help with who can provide it.</h3>
-            </span>
-            <div class = "button-container">
-            <a href="#" role="button" class="button">Post a job</a>
-            <a href="#" role="button" class="button">find jobs</a>
-            </div>
+                      <li class="dropdown-item">
+                          <a href="#">Cleaning Services</a>
+                          <ul class="submenu">
+                              <li><a href="#">House Cleaning</a></li>
+                              <li><a href="#">Carpet Cleaning</a></li>
+                              <li><a href="#">Snow Shoveling</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="dropdown-item">
+                          <a href="#">Personal Services</a>
+                          <ul class="submenu">
+                              <li><a href="#">Babysitting</a></li>
+                              <li><a href="#">Pet Sitting or Dog Walking</a></li>
+                              <li><a href="#">Grocery Shopping</a></li>
+                              <li><a href="#">Tutoring</a></li>
+                          </ul>
+                      </li>
+  
+                      <li class="dropdown-item">
+                          <a href="#">Handyman Services</a>
+                          <ul class="submenu">
+                              <li><a href="#">Furniture Assembly</a></li>
+                              <li><a href="#">Painting and Decorating</a></li>
+                              <li><a href="#">Moving Help</a></li>
+                              <li><a href="#">Yard Work</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="dropdown-item">
+                          <a href="#">Vehicle Services</a>
+                          <ul class="submenu">
+                              <li><a href="#">Car Washing</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
+
+              <li><a href="#">How It Works</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </nav>
+      <a class="cta" href="login.html">
+          <button>Sign Up / Login</button>
+      </a>
+  </header>
+  
+
+   <!--Menu Icons-->
+   <div class="menu-icon">
+      <span class="icon icon-bars"></span>
+   </div>
+
+   <!-- Home Section -->
+   <section id="home" class="hero">
+      <div class="wrapper">
+          <div class="loading">
+              <h1 id="loading-message"></h1>
           </div>
-          <div class="right-side">
-            <img src="Images/heroimg1.jpg" alt="Image 1">
-            <img src="Images/1.jpg" alt="Image 2">
-            <img src="Images/2.jpg" alt="Image 3">
-            <img src="Images/3.jpg" alt="Image 4">
-            <img src="Images/4.jpg" alt="Image 5">
-            <img src="Images/5.jpg" alt="Image 6">
+          
+        <div class="hero-container">
+          <span>
+            <h1>Find help for everyday tasks.</h1>
+          </span>
+          <span>
+            <h3>Connecting people who needs help with who can provide it.</h3>
+          </span>
+          <div class = "button-container">
+          <a href="#" role="button" class="button">Post a job</a>
+          <a href="#" role="button" class="button">find jobs</a>
           </div>
         </div>
-      </section>
-<!--
-      <section id = "first" class = "hero">
-        <div class="leftsideone">
-            <h1>Ask for help for the first time</h1>
-            <h3>Take your time to do somwthing else, when your tasker completes your work for you!</h3>
-            <h4>Explain what you need done
-                Give a rough budget,
-                Select a tasker,
-                Get your done.
-            </h4>
+        <div class="right-side">
+          <img src="Images/heroimg1.jpg" alt="Image 1">
+          <img src="Images/1.jpg" alt="Image 2">
+          <img src="Images/2.jpg" alt="Image 3">
+          <img src="Images/3.jpg" alt="Image 4">
+          <img src="Images/4.jpg" alt="Image 5">
+          <img src="Images/5.jpg" alt="Image 6">
         </div>
-        <div id = "rightsideone">
-            <img  height = 100px src="Images/heroimg1.jpg">
-            <img  height = 100px src="Images/heroimg1.jpg">
-            <img  height = 100px src="Images/heroimg1.jpg">
-            <img  height = 100px src="Images/heroimg1.jpg">
-            <img  height = 100px src="Images/heroimg1.jpg">
-        </div>
-        <a href = "#" ><button>Post a Job</button></section></a>
-      </section>
+      </div>
+    </section>
 
-      <section id = "second" class = "hero">
-        <div>
-            <h1>Turn your skills into income</h1>
-            <h3>Whether you're a tech whiz or a
-                skilled tradesperson, discover your
-                next gig on Plexi.</h3>
-            <h4>Access countless job opportunities at no cost
-                No hidden fees or subscriptions
-                Earn extra income on your own terms
-                Expand your business and connect with new
-                clients
-                </h4>
-                <img  height = 300px src="Images/heroimg1.jpg">
-                <a href = "#" ><button>Search for Jobs</button></section></a>
-        </div>
-      </section>
+    <!-- How It Works Section -->
+<section id="how-it-works" class="how-it-works">
+  <div class="section-header">
+      <h2>How It Works</h2>
+  </div>
 
-      <section id = "third" class = "hero">
-        <div id = "rightsidetwo">
-            <h1>for Job Providers</h1>
-            <h3>Request help, set your Budget, Get your work done</h3>
-            <img  height = 200px src="Images/heroimg1.jpg">
-            <a href = "#" ><button>Post a Job for free</button></section></a>
-        </div>
+  <!-- For Job Providers and Seekers -->
+  <div class="job-roles">
+      <div class="job-role">
+          <h3>For Job Providers</h3>
+          <ul>
+              <li><span class="icon">📌</span> Post a Job: Specify details and budget.</li>
+              <li><span class="icon">👤</span> Select a Tasker: View profiles and reviews.</li>
+              <li><span class="icon">💳</span> Secure Payment: Held until task completion.</li>
+          </ul>
+      </div>
+      <div class="job-role">
+          <h3>For Job Seekers</h3>
+          <ul>
+              <li><span class="icon">🔍</span> Search for Jobs: Browse job requests.</li>
+              <li><span class="icon">✔️</span> Complete Jobs: Earn income by completing tasks.</li>
+          </ul>
+      </div>
+  </div>
 
-        <div class = "leftsidetwo">
-            <h1>for Job Seekers</h1>
-            <h3>Look for requests,
-                counter their offer, get
-                the job done.</h3>
-            <img  height = 200px src="Images/heroimg1.jpg">
-            <a href = "#" ><button>Search For Jobs</button></section></a>
-        </div>
-      </section>
+  <!-- Key Features -->
+  <div class="key-features">
+      <h3>Key Features</h3>
+      <div class="features-grid">
+          <div class="feature">
+              <span class="icon">👍</span>
+              <h4>Easy to Use</h4>
+              <p>Simple job posting and browsing.</p>
+          </div>
+          <div class="feature">
+              <span class="icon">🔒</span>
+              <h4>Secure</h4>
+              <p>Safe payments and verified profiles.</p>
+          </div>
+          <div class="feature">
+              <span class="icon">⚙️</span>
+              <h4>Flexible</h4>
+              <p>Find or offer one-time or regular jobs.</p>
+          </div>
+      </div>
+  </div>
 
+  <!-- Mission and Vision -->
+  <div class="mission-vision">
+      <div class="mission">
+          <h3>Mission</h3>
+          <p>Simplify the process of finding and offering jobs, creating a reliable community built on trust and convenience.</p>
+      </div>
+      <div class="vision">
+          <h3>Vision</h3>
+          <p>Make everyday tasks manageable for everyone, benefiting both job providers and seekers.</p>
+      </div>
+  </div>
 
-      <section id = "fourth" class = "hero">
-        <div class = "leftsidetwo">
-            <h2>Explain what kind of
-                help you need and
-                when?
-                </h2>
-            
-                <h3>For better understanding for the
-                    tasker, describe the task in a easy
-                    way.
-                    </h3>
-            <img  height = 200px src="Images/heroimg1.jpg">
-        </div>
+  <!-- Additional Information -->
+  <div class="additional-info">
+      <div class="info">
+          <h4>Ratings and Reviews</h4>
+          <p>Users can rate and review taskers after completing tasks.</p>
+      </div>
+      <div class="info">
+          <h4>Secure Payment</h4>
+          <p>Payments are temporarily withheld until the task is completed to satisfaction.</p>
+      </div>
+  </div>
+</section>
 
-        <div class = "rightsidetwo">
-            <h2>Specify your budget</h2>
-            <h3>Give your budget estimate. Tasker
-                can negotiate with you and you
-                can change itlater too.
-                </h3>
-            <img  height = 200px src="Images/heroimg1.jpg">
-        </div>
-      </section>
-
-      <section id = "fifth" class = "hero">
-        <div class = "rightsidetwo">
-            <h2>Choose the best Tasker
-            </h2>
-            <h3>Browse through the taskers within
-                your budgetto complete your
-                work securely and stress-free. You
-                can view their photo, reviews, and
-                previous tasks to help you make
-                the right choice.</h3>
-            <img  height = 200px src="Images/heroimg1.jpg">
-        </div>
-
-        <div class = "leftsidetwo">
-            <h2>Secure Payment</h2>
-            <h3>Your paymentis temporarily
-                withheld. Dissatisfied? Request a
-                review.Incomplete tasks may
-                resultin a partial refund for you
-                and partial compensation for the
-                tasker.</h3>
-            <img  height = 200px src="Images/heroimg1.jpg">
-        </div>
-      </section>
-
-      <section id = "sixth" class = "hero">
-        <div class = "rightsidetwo">
-            <h1>Ratings and Reviews</h1>
-            <h3>After finishing a task, you can
-                choose to rate and review the
-                tasker. This feedback is valuable
-                for others considering assigning
-                tasks to them later on. Remember
-                to read and write reviews to
-                contribute to the community.
-                </h3>
-            <img  height = 200px src="Images/heroimg1.jpg">
-        </div>
-      </section>
-    -->
     <script src="script.js"></script>
 </body>
 </html>
