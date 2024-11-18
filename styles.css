@@ -38,6 +38,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
+  background-color: #1c1c1c;
 }
 
 * {
@@ -812,7 +813,10 @@ header.scrolled {
 .contact-info {
   max-width: 1200px;
   color: white;
-  margin: 0 auto;
+  background-color: #2c2c2c;
+  border-radius: 5px;
+  margin: auto;
+  padding: 10px;
   display: flex;
   justify-content: center;
   gap: 80px;
@@ -848,13 +852,16 @@ header.scrolled {
 }
 
 .contact-form {
+  text-align: center;
+  background-color: #1c1c1c;
   max-width: 800px;
-  margin: 50px auto 0;
+  margin: auto;
   padding: 0 20px;
 }
 
 .form-header {
-  color: #003366;
+  text-align: center;
+  color: white;
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -882,6 +889,7 @@ textarea {
 }
 
 .submit-btn {
+  text-align: center;
   background-color: #cdde20;
   color: #333;
   padding: 12px 30px;
