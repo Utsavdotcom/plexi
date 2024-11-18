@@ -803,6 +803,7 @@ header.scrolled {
 
 .contact-header h2 {
   font-size: 36px;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0;
@@ -810,6 +811,7 @@ header.scrolled {
 
 .contact-info {
   max-width: 1200px;
+  color: white;
   margin: 0 auto;
   display: flex;
   justify-content: center;
