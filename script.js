@@ -55,3 +55,11 @@ document.addEventListener('click', (event) => {
 });
 
 
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    document.getElementById('thank-you-message').style.display = 'block';
+    setTimeout(() => {
+      document.getElementById('thank-you-message').style.display = 'none';
+    }, 3000);
+  });
+  
